@@ -1,5 +1,3 @@
-console.log("Client side javascript file is loaded!")
-
 //Selecting the form element from the HTML document. Returns a Javascript representation of the element.
 const weatherForm = document.querySelector("form")
 //Getting the value from the form submit
