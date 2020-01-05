@@ -18,7 +18,7 @@ weatherForm.addEventListener("submit", function (event) {
     messageTwo.textContent = ""
 
     //using the input to fetch weather
-    fetch("http://nodecode.ddns.net:3000/weather?address=" + location).then(function (response) {
+    fetch("/weather?address=" + location).then(function (response) {
         response.json().then(function (data) {
             if (data.error) {
                 messageOne.textContent = data.error
